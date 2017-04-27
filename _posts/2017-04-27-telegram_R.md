@@ -17,7 +17,7 @@ title: "telegram-бот из R"
 
     ```r
     R_TELEGRAM_BOT_my_bot=12345678:sdsfsdfsdfjklsdjlfldskfls
-    ```
+    ```  
 7. Перзапускаем R.
 
     ```r

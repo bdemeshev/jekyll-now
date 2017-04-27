@@ -18,6 +18,7 @@ title: "telegram-бот из R"
   ```r
   R_TELEGRAM_BOT_my_bot=12345678:sdsfsdfsdfjklsdjlfldskfls
   ```
+
 7. Перзапускаем R.
 
   ```r
@@ -25,7 +26,9 @@ title: "telegram-бот из R"
   bot <- TGBot$new(token = bot_token('my_bot'))
   bot$getMe()
   ```
+
 8. Находим `my_bot` в телеграме и пишем ему "Привет" или что-нибудь ещё.
+
 9. Узнаём `chat.id`:
 
   ```r
@@ -33,7 +36,8 @@ title: "telegram-бот из R"
   new_messages$message
   ```
 
-Получаем номер а-ля 123456789.
+  Получаем номер а-ля 123456789.
+  
 10. Настраиваем `chat.id` по умолчанию:
 
   ```r
@@ -46,6 +50,7 @@ title: "telegram-бот из R"
   bot$sendMessage('Привет от бота :)')
   bot$sendDocument('map.png')
   ```
+
 12. А ещё можно настроить скрипт R так, чтобы пересылались сообщения об ошибках:
 
   ```r

@@ -128,14 +128,18 @@ title: "Проект по временным рядам"
 
 [R from python: rpy2](http://blog.yhat.com/posts/rpy2-combing-the-power-of-r-and-python.html)
 
+[python from R: reticulate](https://rstudio.github.io/reticulate/articles/introduction.html)
+
+
 [R from julia](https://github.com/JuliaInterop/RCall.jl)
 
 [julia from R](https://github.com/armgong/RJulia)
+
 
 [python from julia](https://github.com/JuliaPy/PyCall.jl)
 
 [julia from python](https://github.com/JuliaPy/pyjulia)
 
-[python from R](https://www.r-bloggers.com/calling-python-from-r-with-rpython/)
+
 
 

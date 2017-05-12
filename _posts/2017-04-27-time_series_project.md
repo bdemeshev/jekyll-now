@@ -30,6 +30,10 @@ title: "Проект по временным рядам"
 
 Мощь старых приёмов (ARMA + преобразование Бокса-Кокса) и сезонность сложной структуры.
 
+[Hyndman, Forecasting with complex seasonality](http://robjhyndman.com/papers/ComplexSeasonality.pdf)
+
+
+
 * gaussian state space models
 
 Родственник ETS.
@@ -109,6 +113,7 @@ title: "Проект по временным рядам"
 
 [Краткий трёхдневный семинар по прогнозированию рядов в R](http://robjhyndman.com/eindhoven/)
 
+[Forecasting with R workshop](http://kourentzes.com/forecasting/wp-content/uploads/2016/06/Forecasting-with-R-notes.pdf)
 
 * Много рядов:
 

@@ -42,7 +42,9 @@ title: "Проект по временным рядам"
 
 [PyFlux: python time series library](http://www.pyflux.com)
 
-* bayesian structural time series
+Три пакета для байесовских структурных временных рядов:
+
+* bsts
 
 Довольно молодой игрок. Байесовский подход, но по сути, прямой родственник ETS. Готовый пакет от гугла.
 
@@ -55,6 +57,9 @@ title: "Проект по временным рядам"
 [Prophet: Automatic Forecasting Procedure](https://github.com/facebookincubator/prophet)
 
 Совсем юный игрок для дневных рядов. Аналогично с bsts: байесовский подход и родственник ETS. Готовый код в STAN. Пакет от фейсбука.
+
+* реализация [bsts в STAN](tharte.github.io/mbt/mbt.html)
+
 
 * SSA, «Гусеница»
 

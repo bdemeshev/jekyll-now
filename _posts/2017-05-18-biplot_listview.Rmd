@@ -1,0 +1,42 @@
+---
+title: "Красивый график для главных компонент"
+layout: post
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+Ура! У Ричарда Телфорда из Норвегии дошли руки до оживления [красивых графиков для главных компонент!](https://github.com/richardjtelford/ggbiplot/tree/experimental)
+
+
+Если коротко. Ставим пакет:
+```{r, eval=FALSE}
+devtools::install_github("richardjtelford/ggbiplot", ref = "experimental")
+```
+
+Рисуем главные компоненты:
+```{r, message=FALSE}
+library(ggbiplot)
+data(wine)
+cultivar <- wine.class
+m <- prcomp(wine, scale = TRUE)
+qplot(PC1, PC2, data = fortify(m), color = cultivar) + 
+  stat_ellipse(aes(group = cultivar))
+```
+
+И со стрелочками-проекциями исходных переменных
+```{r}
+df <- fortify(m, scale = 1, equalize = FALSE)
+ggplot(df, aes(x = PC1, PC2)) + 
+  geom_point(aes(color = cultivar)) +
+  geom_axis(data = attr(df, "basis"), aes(label = .name))
+```
+
+
+А ещё недавно попался под руку пакет для визуализации списков:
+```{r, message=FALSE}
+library(listviewer)
+model <- lm(data = cars, dist ~ speed)
+jsonedit(model)
+```
+

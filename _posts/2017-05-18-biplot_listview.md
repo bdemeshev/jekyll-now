@@ -45,4 +45,4 @@ model <- lm(data = cars, dist ~ speed)
 jsonedit(model)
 ```
 
-![]({{ site.baseurl }}/images/2017-05-18-listview) <!-- -->
+![]({{ site.baseurl }}/images/2017-05-18-listview.png) <!-- -->

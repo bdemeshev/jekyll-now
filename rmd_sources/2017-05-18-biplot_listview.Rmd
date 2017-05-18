@@ -34,9 +34,10 @@ ggplot(df, aes(x = PC1, PC2)) +
 
 
 А ещё недавно попался под руку пакет для визуализации списков:
-```{r, message=FALSE}
+```{r, message=FALSE, eval=FALSE}
 library(listviewer)
 model <- lm(data = cars, dist ~ speed)
 jsonedit(model)
 ```
 
+![]({{ site.baseurl }}/images/2017-05-18-listview) <!-- -->

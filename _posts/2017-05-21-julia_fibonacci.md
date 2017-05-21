@@ -7,4 +7,4 @@ layout: post
 
 И это легко увидеть в julia :) 
 
-![]({{ site.baseurl }}/images/2017-05-18-julia_fibonacci.png) 
+![]({{ site.baseurl }}/images/2017-05-21-julia_fibonacci.png) 

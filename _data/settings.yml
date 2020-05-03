@@ -8,7 +8,7 @@ google-ID: ''
 
 menu:
 - {name: 'Об авторе', path: 'menu', url: 'about.html'}
-- {name: 'Заметки', path: 'menu', url: 'writing.html'}
+- {name: 'Заголовки', path: 'menu', url: 'writing.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:

@@ -46,7 +46,7 @@ $$f(x) = \frac{1}{\sqrt{2\pi}}\exp\left(-\frac{x^2}{2}\right)$$
 
 Полное доказательство можно найти у Wlodzimierz Bryc в [Normal Distribution characterizations with applications](https://homepages.uc.edu/~brycwz/probab/charakt/charakt.pdf).
 
-Краткое доказательство с дополнительным предположением существования функции плотности есть у James в [Probability: the logic of science](http://www-biba.inrialpes.fr/Jaynes/cc07s.pdf).
+Краткое доказательство с дополнительным предположением существования функции плотности есть у Jaynes в [Probability: the logic of science](http://www-biba.inrialpes.fr/Jaynes/cc07s.pdf).
 
 
 Для случая двух величин аксиомы Хершела-Максвелла можно упростить:
@@ -123,7 +123,7 @@ $$f(x) = \frac{1}{\sqrt{2\pi}}\exp\left(-\frac{x^2}{2}\right)$$
 Есть и определение через дифференциальную энтропию:
 
 > Случайная величина $X$ имеет математическое ожидание $\mu$ и дисперсию $\sigma^2$. 
-> Дифференциальная энтропию величины $X$ будет минимальной, если и только если $X_i \sim N(0;1)$.
+> Дифференциальная энтропия величины $X$ будет минимальной, если и только если $X_i \sim N(0;1)$.
 
 Доказательство у Keith Conrad, [Probability distribution and maximum entropy](https://kconrad.math.uconn.edu//blurbs/analysis/entropypost.pdf).
 
@@ -131,7 +131,7 @@ $$f(x) = \frac{1}{\sqrt{2\pi}}\exp\left(-\frac{x^2}{2}\right)$$
 
 > Если в семействе живут случайные величины нулевым ожиданием и конечной дисперсией, а сумма двух независимых величин этого семейства распределений принадлежит ему же с точностью до масштабирования, то речь идёт о нормальном семействе.
 
-James пишет, что идею стабильности при суммировании впервые [сформулировал Vernon Landon](http://www-biba.inrialpes.fr/Jaynes/cc07s.pdf), и приводит современный вариант доказательства. Имя Vernon Landon, увы, практически неизвестно. 
+Jaynes пишет, что идею стабильности при суммировании впервые [сформулировал Vernon Landon](http://www-biba.inrialpes.fr/Jaynes/cc07s.pdf), и приводит современный вариант доказательства. Имя Vernon Landon, увы, практически неизвестно. 
 
 Давайте же рассказывать про красивую аксиоматику, из которой следует формула плотности нормального распределения :)
 

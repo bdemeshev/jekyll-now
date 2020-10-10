@@ -21,25 +21,25 @@ $$
 
 По формуле свёртки получаем:
 $$
-f_{V'}(x) = \int_{-\infty}^{+\infty} f_V(x-u \middle \sigma^2)f_{\Delta}(u) du 
+f_{V'}(x) = \int_{-\infty}^{+\infty} f_V(x-u | \sigma^2)f_{\Delta}(u) du 
 $$
 
 Разложим $f_V(x-u)$ в ряд Тейлора по $u$:
 
 $$
-f_V(x-u) = f_V(x \middle \sigma^2) - u \frac{\partial f_V(x \middle \sigma^2)}{\partial x} + \frac{1}{2!} u^2 \frac{\partial^2 f_V(x \middle \sigma^2)}{\partial x^2} + \ldots
+f_V(x-u) = f_V(x | \sigma^2) - u \frac{\partial f_V(x | \sigma^2)}{\partial x} + \frac{1}{2!} u^2 \frac{\partial^2 f_V(x | \sigma^2)}{\partial x^2} + \ldots
 $$
 
 Подставляем разложение Тейлора в формулу свёртки. 
 Интегрируем каждое слагаемое ряда по отдельности:
 
 $$
- f_{V'}(x) = f_V(x \middle \sigma^2) \int_{-\infty}^{+\infty} f_{\Delta}(u) du  -  \frac{\partial f_V(x \middle \sigma^2)}{\partial x} \int_{-\infty}^{+\infty} u f_{\Delta}(u) du + \frac{1}{2!}  \frac{\partial^2 f_V(x \middle \sigma^2)}{\partial x^2} \int_{-\infty}^{+\infty} u f_{\Delta}(u) du + \ldots
+ f_{V'}(x) = f_V(x | \sigma^2) \int_{-\infty}^{+\infty} f_{\Delta}(u) du  -  \frac{\partial f_V(x | \sigma^2)}{\partial x} \int_{-\infty}^{+\infty} u f_{\Delta}(u) du + \frac{1}{2!}  \frac{\partial^2 f_V(x | \sigma^2)}{\partial x^2} \int_{-\infty}^{+\infty} u f_{\Delta}(u) du + \ldots
 $$
 
 В терминах ожиданий получаем:
 $$
-f_{V'}(x) = f_V(x \middle \sigma^2) - E(\Delta) \frac{\partial f_V(x \middle \sigma^2)}{\partial x} + \frac{1}{2!} E(\Delta^2) \frac{\partial^2 f_V(x \middle \sigma^2)}{\partial x^2} + \ldots
+f_{V'}(x) = f_V(x | \sigma^2) - E(\Delta) \frac{\partial f_V(x | \sigma^2)}{\partial x} + \frac{1}{2!} E(\Delta^2) \frac{\partial^2 f_V(x | \sigma^2)}{\partial x^2} + \ldots
 $$
 
 
@@ -48,27 +48,27 @@ $$
 
 В терминах ожиданий получаем:
 $$
-f_{V'}(x) = f_V(x \middle \sigma^2) + \alpha^2 \frac{1}{2!} \frac{\partial^2 f_V(x \middle \sigma^2)}{\partial x^2} - \alpha^3 \frac{1}{3!} E(U^3)  \frac{\partial^3 f_V(x \middle \sigma^2)}{\partial x^3} + \ldots
+f_{V'}(x) = f_V(x | \sigma^2) + \alpha^2 \frac{1}{2!} \frac{\partial^2 f_V(x | \sigma^2)}{\partial x^2} - \alpha^3 \frac{1}{3!} E(U^3)  \frac{\partial^3 f_V(x | \sigma^2)}{\partial x^3} + \ldots
 $$
 
 
 Заметим, что $Var(V') = Var(V) + \alpha^2$. 
 
 Лэндон предположил, что закон распределения $f_{V'}(x)$ 
-совпадает с законом распределение $f_V(x \middle \sigma^2 + \alpha^2)$.
+совпадает с законом распределение $f_V(x | \sigma^2 + \alpha^2)$.
 
 То есть прибавление шума к напряжению не изменяет семейства закона распределения, а меняет только дисперсию. 
 
 Разложим в ряд Тейлора по $\alpha^2$:
 
 $$
-f_V(x \middle \sigma^2 + \alpha^2) = f_V(x \middle \sigma^2) + \alpha^2 \frac{\partial f_V(x \middle \sigma^2)}{\partial \sigma^2} + \frac{1}{2!}\alpha^4 \frac{\partial^2 f_V(x \middle \sigma^2)}{(\partial \sigma^2)^2} + \ldots
+f_V(x | \sigma^2 + \alpha^2) = f_V(x | \sigma^2) + \alpha^2 \frac{\partial f_V(x | \sigma^2)}{\partial \sigma^2} + \frac{1}{2!}\alpha^4 \frac{\partial^2 f_V(x | \sigma^2)}{(\partial \sigma^2)^2} + \ldots
 $$
 
 Согласно предпосылкам Лэндона это одна и та же функция, поэтому:
 
 $$
-\frac{\partial f_V(x \middle \sigma^2)}{\partial \sigma^2} = \frac{1}{2} \frac{\partial^2 f_V(x \middle \sigma^2)}{\partial x^2}
+\frac{\partial f_V(x | \sigma^2)}{\partial \sigma^2} = \frac{1}{2} \frac{\partial^2 f_V(x | \sigma^2)}{\partial x^2}
 $$
 
 На этом вывод заканчивается. Далее Лэндон ссылается, что это известное [уравнение теплопроводности](https://en.wikipedia.org/wiki/Heat_equation).

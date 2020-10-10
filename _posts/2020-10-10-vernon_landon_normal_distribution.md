@@ -14,27 +14,27 @@ tags: [mathematics, probability, normal distribution]
 Предположим, что напряжение можно представить в виде основной части и некоторого шума, $V' = V + \Delta$.
 
 Шум $\Delta$ и основная часть $V$ независимы. 
-Причем закон распределения $V$ принадлежит семейству распределений, которое полностью определяется дисперсией $Var(V)= \sigma^2$.
+Закон распределения $V$ принадлежит семейству распределений, которое полностью определяется дисперсией $Var(V)= \sigma^2$.
 Другими словами плотность $V$ задаётся формулой $f_V(x|\sigma^2)$.
 
 
 По формуле свёртки получаем:
 
 $$
-f_{V'}(x) = \int_{-\infty}^{+\infty} f_V(x-u | \sigma^2)f_{\Delta}(u) du 
+f_{V'}(x) = \int_{-\infty}^{+\infty} f_V(x-h | \sigma^2)f_{\Delta}(h) dh 
 $$
 
-Разложим $f_V(x-u)$ в ряд Тейлора по $u$:
+Разложим $f_V(x-h | \sigma^2)$ в ряд Тейлора по $u$:
 
 $$
-f_V(x-u) = f_V(x | \sigma^2) - u \frac{\partial f_V(x | \sigma^2)}{\partial x} + \frac{1}{2!} u^2 \frac{\partial^2 f_V(x | \sigma^2)}{\partial x^2} + \ldots
+f_V(x-h |\sigma^2) = f_V(x | \sigma^2) - h \frac{\partial f_V(x | \sigma^2)}{\partial x} + \frac{1}{2!} h^2 \frac{\partial^2 f_V(x | \sigma^2)}{\partial x^2} + \ldots
 $$
 
 Подставляем разложение Тейлора в формулу свёртки. 
 Интегрируем каждое слагаемое ряда по отдельности:
 
 $$
- f_{V'}(x) = f_V(x | \sigma^2) \int_{-\infty}^{+\infty} f_{\Delta}(u) du  -  \frac{\partial f_V(x | \sigma^2)}{\partial x} \int_{-\infty}^{+\infty} u f_{\Delta}(u) du + \frac{1}{2!}  \frac{\partial^2 f_V(x | \sigma^2)}{\partial x^2} \int_{-\infty}^{+\infty} u f_{\Delta}(u) du + \ldots
+ f_{V'}(x) = f_V(x | \sigma^2) \int_{-\infty}^{+\infty} f_{\Delta}(h) dh  -  \frac{\partial f_V(x | \sigma^2)}{\partial x} \int_{-\infty}^{+\infty} h f_{\Delta}(h) dh + \frac{1}{2!}  \frac{\partial^2 f_V(x | \sigma^2)}{\partial x^2} \int_{-\infty}^{+\infty} h^2 f_{\Delta}(h) dh + \ldots
 $$
 
 В терминах ожиданий получаем:
@@ -54,7 +54,7 @@ $$
 
 Лэндон предположил, что закон распределения $V'$ принадлежит тому же семейству, что и закон распределения $V$. 
 Заметим, что $Var(V') = Var(V) + Var(\Delta) = \sigma^2 + \alpha^2$. 
-Значит полностью $f_{V'}(x)$  совпадает с плотностью $f_V(x | \sigma^2 + \alpha^2)$.
+Значит плотность $f_{V'}(x)$  совпадает с плотностью $f_V(x | \sigma^2 + \alpha^2)$.
 
 Прибавление шума к напряжению не изменяет семейства закона распределения, а меняет только дисперсию. 
 

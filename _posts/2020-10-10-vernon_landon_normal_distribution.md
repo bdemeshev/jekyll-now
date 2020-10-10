@@ -24,7 +24,7 @@ $$
 f_{V'}(x) = \int_{-\infty}^{+\infty} f_V(x-h | \sigma^2)f_{\Delta}(h) dh 
 $$
 
-Разложим $f_V(x-h | \sigma^2)$ в ряд Тейлора по $u$:
+Разложим $f_V(x-h|\sigma^2)$ в ряд Тейлора по $h$:
 
 $$
 f_V(x-h |\sigma^2) = f_V(x | \sigma^2) - h \frac{\partial f_V(x | \sigma^2)}{\partial x} + \frac{1}{2!} h^2 \frac{\partial^2 f_V(x | \sigma^2)}{\partial x^2} + \ldots

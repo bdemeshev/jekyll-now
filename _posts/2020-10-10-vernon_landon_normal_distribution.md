@@ -8,7 +8,7 @@ tags: [mathematics, probability, normal distribution]
 В 1941 году инженер-электрик Вернон Лэндон опубликовал малоизвестный вывод нормального распределения,
 [The Distribution of Amplitude with Time in Fluctuation Noise](https://worldradiohistory.com/hd2/IDX-Site-Technical/Engineering-General/Archive-IRE-IDX/IDX/40s/IRE-1941-02-OCR-Page-0014.pdf). 
 Вывод Лэндона пересказал [Эдвин Томпсон Джейнс](https://bayes.wustl.edu/) в книге "Теория вероятностей: логика науки".
-А это мой пересказ пересказа Джейнсона :)
+А это мой пересказ пересказа Джейнса :)
 
 
 Предположим, что напряжение можно представить в виде основной части и некоторого шума, $V' = V + \Delta$.
